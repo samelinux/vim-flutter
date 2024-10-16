@@ -58,6 +58,7 @@ command! FlutterHotRestart call flutter#hot_restart()
 command! FlutterScreenshot call flutter#screenshot()
 command! FlutterQuit call flutter#quit()
 command! FlutterVisualDebug call flutter#visual_debug()
+command! FlutterDevTools call flutter#devtools()
 
 if g:flutter_hot_reload_on_save
   autocmd! BufWritePost *.dart call flutter#hot_reload_quiet()
