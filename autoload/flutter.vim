@@ -40,6 +40,10 @@ function! flutter#visual_debug() abort
   return flutter#send('p')
 endfunction
 
+function! flutter#devtools() abort
+  return flutter#send('v')
+endfunction
+
 function! flutter#hot_reload() abort
   return flutter#send('r')
 endfunction
