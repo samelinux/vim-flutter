@@ -34,13 +34,13 @@ endif
 
 if !exists('g:flutter_show_log_on_run') || g:flutter_show_log_on_run == 1
   let g:flutter_show_log_on_run="split"
-elseif type(g:flutter_show_log_on_run) == v:t_number && g:flutter_show_log_on_run == 0
+elseif type(g:flutter_show_log_on_run) == type(0) && g:flutter_show_log_on_run == 0
   let g:flutter_show_log_on_run="hidden"
 endif
 
 if !exists('g:flutter_show_log_on_attach') || g:flutter_show_log_on_attach == 1
   let g:flutter_show_log_on_attach="split"
-elseif type(g:flutter_show_log_on_attach) == v:t_number && g:flutter_show_log_on_attach == 0
+elseif type(g:flutter_show_log_on_attach) == type(0) && g:flutter_show_log_on_attach == 0
   let g:flutter_show_log_on_attach="hidden"
 endif
 
